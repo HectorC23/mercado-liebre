@@ -1,0 +1,350 @@
+/* 480 + 760 */
+/* 
+    Paleta de colores
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+    #0022AA.
+*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+/* body */
+body {
+    margin: 0%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 270px;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 12px;
+}
+.ban {
+    width: 100%;
+    height: 150px;
+    background-image: url("/images/img-home-banner.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+/* HEADER */
+header {
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+    height: 35vh;
+}
+.logo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-logo{
+    height: 50%;
+}
+.fa-magnifying-glass {
+    background-color: white;
+    /* width: 18px; */
+    padding: 5px;
+    border: black 0.5px solid;
+    height: 60%;
+    box-sizing: border-box;
+    border: transparent;
+}
+.cont_buscar{
+    display: flex;
+    margin: 10px;
+    gap: 5px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: transparent;
+    border-radius: 10px;
+}
+#buscar{
+    text-align: start;
+    height: 45%;
+    width: 150px;
+    border: transparent;
+    border-radius: 10px;
+}
+#buscar:focus-visible{
+    /* border: transparent; */
+    outline: none;
+    border-radius: 15px;
+}
+
+.cont_mano{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+}
+
+.navbar{
+    width: 100%;
+    padding: 12px 0px;
+    display: none;
+}
+
+.nav_ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_ul li a{
+    color: black;
+    text-decoration: none;
+}
+li .fa-solid {
+    color: black;
+}
+.cont_menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.burger-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #1259c3;
+}
+.fa-bars{
+    color: white;
+}
+
+
+/* MAIN */
+main{
+    width: 90%;
+    margin: 50px 0px;
+}
+.cont_section{
+    gap: 15px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    width: 220px;
+}
+.cont_info {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+.precios {
+    font-size: 18px;
+    width: 30%;
+    padding-right: 30px;
+}
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    width: 50%;
+}
+.descripciones {
+    font-size: 16px;
+    color: #666;
+    display: block;
+    margin-top: 13px;
+    width: 100%;
+}
+.card img {
+    width: 100%;
+    max-width: 230px;
+}
+div p {
+    margin: 0%;
+}
+
+.cont_camion{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    position: relative;
+    
+}
+.fa-truck{
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    padding: 7px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 1.5s ease;
+}
+.fa-truck:hover{
+    transform: rotate(-90deg);
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+    background-color: #EAC926;
+}
+.cont_sec_foot{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+footer i {
+    color: #1e5cc8;
+    margin-bottom: 25px;
+}
+.sec_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    padding: 40px 0px;
+}
+h4 {
+    margin: 0%;
+}
+.sec_footer p {
+    margin: 0px;
+    text-align: center;
+}
+
+
+
+/* KEYFRAMES */
+
+@media (min-width: 738px) {
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .cont_mano {
+        width: 270px;
+    }
+    .nav_ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+        width: 40%;
+    }
+    .cont_menu{
+        display: none;
+    }
+    .card {
+        transition: box-shadow 1.2s ease;
+    }
+    .card:hover{
+        box-shadow: 0px 0px 20px 5px rgb(100, 100, 100);
+    }
+    .descripciones{
+        opacity: 0;
+        transition: height 0.5s ease-in, opacity 2s ease;
+        height: 10px;
+    }
+    .descripciones:hover{
+        opacity: 1;
+        height: 30px;
+    }
+    header{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #buscar {
+        border: transparent;
+        border-radius: 10px;
+    }
+    
+    
+    .logo{
+        height: 150px;
+    }
+    .ban{
+        height: 200px;
+    }
+    
+}
+
+@media (min-width: 1000px){
+    .card img {
+        max-width: 250px;
+    }
+    .legal{
+        margin: 0px 300px;
+    }
+    .cont_buscar{
+        height: 40px;
+    }
+    #buscar {
+        border-radius: 13px;
+        width: 250px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cont_sec_foot{
+        flex-direction: row;
+    }
+    .sec_footer {
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        padding: 40px 0px;
+        max-width: 550px;
+        margin: 0px 20px;
+    }
+    .legal{
+        margin: 0px 200px;
+    }
+    footer .fa-solid{
+        transition: color 1s ease, filter 1s ease;
+    }
+    footer .fa-solid:hover{
+        color: white;
+        filter: drop-shadow(0px 0px 3px black);
+    }
+}

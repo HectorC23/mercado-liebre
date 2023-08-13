@@ -1,0 +1,472 @@
+body {
+    margin: 0%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 270px;
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 12px;
+}
+.ban {
+    width: 100%;
+    height: 150px;
+    background-image: url("/images/img-home-banner.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+                /* HEADER */
+header {
+    background-color: #EAC926;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+.logo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-logo{
+    height: 50%;
+}
+.fa-magnifying-glass {
+    background-color: white;
+    /* width: 18px; */
+    padding: 5px;
+    border: black 0.5px solid;
+    height: 60%;
+    box-sizing: border-box;
+    border: transparent;
+}
+.cont_buscar{
+    display: flex;
+    margin: 10px;
+    gap: 5px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: transparent;
+    border-radius: 10px;
+}
+#buscar{
+    text-align: start;
+    height: 45%;
+    width: 150px;
+    border: transparent;
+    border-radius: 10px;
+}
+#buscar:focus-visible{
+    /* border: transparent; */
+    outline: none;
+    border-radius: 15px;
+}
+
+.cont_mano{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+}
+
+.navbar{
+    width: 100%;
+    padding: 12px 0px;
+    display: none;
+}
+
+.nav_ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_ul li a{
+    color: black;
+    text-decoration: none;
+}
+li .fa-solid {
+    color: black;
+}
+.cont_menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.burger-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #1259c3;
+}
+.fa-bars{
+    color: white;
+}
+
+
+                /* MAIN  */
+
+main {
+    width: 100%;
+    height: 140vh;
+    /* margin: 10px 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    height: 95%;
+    width: 80%;
+    min-width: 280px;
+    background-color:#EAC926;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: box-shadow 1s ease;
+}
+form:hover{
+    box-shadow: 0px 0px 20px 1px black;
+}
+
+.cont_datos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+.form_datos {
+    height: 30px;
+    width: 70%;
+    max-width: 200px;
+    border-radius: 7px;
+}
+
+.cont_fecha{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* margin: 5px 0px; */
+    gap: 5px;
+}
+.cont_fecha h3 {
+    margin: 0px 0px 10px 0px;
+}
+#form_fecha {
+    width: 70%;
+    max-width: 205px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.cont_perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+}
+.cont_perfil h3 {
+    margin: 0px 0px 10px 0px;
+}
+.cont_label{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+.cont_label label{
+    width: 50%;
+    max-width: 140px;
+}
+.perfil_input{
+    margin: 0%;
+    /* height: 15px;
+    width: 15px; */
+}
+
+.cont_intereses{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cont_intereses h3 {
+    margin: 0px 0px 10px 0px;
+}
+.cont_label2{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.cont_img{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: space-evenly;
+}
+.cont_img h3{
+    margin: 0px 0px 10px 0px;
+}
+
+.cont_btn{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cont_btn button{
+    width: 85%;
+    padding: 5px 8px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #1e5cc8;
+    transition: background-color 0.5s ease, box-shadow 1s ease;
+    color: white;
+}
+.cont_btn button:hover{
+    background-color: #0022AA;
+    box-shadow: 0px 0px 8px 1px black;
+}
+
+
+
+                /* FOOTER  */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+    background-color: #EAC926;
+}
+.cont_sec_foot{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+footer i {
+    color: #1e5cc8;
+    margin-bottom: 25px;
+}
+.sec_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    padding: 40px 0px;
+}
+h4 {
+    margin: 0%;
+}
+.sec_footer p {
+    margin: 0px;
+    text-align: center;
+}
+
+
+@media (min-width: 738px) {
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .cont_mano {
+        width: 270px;
+    }
+    .nav_ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+        width: 40%;
+    }
+    .cont_menu{
+        display: none;
+    }
+    header{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #buscar {
+        border: transparent;
+        border-radius: 10px;
+    }
+    
+    
+    .logo{
+        height: 150px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .cont_sec_foot{
+        flex-direction: row;
+    }
+    .sec_footer {
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        padding: 40px 0px;
+        max-width: 550px;
+        margin: 0px 20px;
+    }
+    .legal{
+        margin: 0px 200px;
+    }
+
+    /* form */
+    main{
+        height: 110vh;
+    }
+    .cont_datos{
+        flex-direction: row;
+        /* justify-content: space-evenly; */
+        gap: 50px;
+    }
+    .form_datos{
+        height: 35px;
+        font-size: 1em;
+    }
+    form h3 {
+        font-size: 1.5em;
+    }
+    #form_fecha{
+        font-size: 17px;
+    }
+    .cont_label label{
+        font-size: 17px;
+    }
+    .cont_intereses{
+        height: 80px;
+    }
+    .cont_label2{
+        height: 50%;
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+    }
+    .cont_label2 label{
+        font-size: 17px;
+    }
+    .cont_img input{
+        font-size: 17px;
+    }
+    .cont_btn{
+        gap: 10px;
+        margin: 10px 0px 0px 0px;
+    }
+    .cont_btn button {
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px){
+    header {
+        font-size: 20px;
+    }
+    footer{
+        font-size: 1.5em;
+    }
+    .legal{
+        margin: 0px 300px;
+    }
+    .cont_buscar{
+        height: 50px;
+        width: 400px;
+        justify-content: space-between;
+    }
+    #buscar {
+        font-size: 1.2em;
+        border-radius: 13px;
+        width: 80%;
+    }
+
+    /* form */
+    main{
+        height: 120vh;
+        font-size: 1.2em;
+    }
+    .form_datos{
+        height: 40px;
+        max-width: 300px;
+        font-size: 1.2em;
+    }
+    #form_fecha{
+        font-size: 30px;
+        max-width: 300px;
+        height: 40px;
+    }
+    .cont_label label{
+        font-size: 25px;
+        max-width: 200px;
+    }
+    .cont_label input{
+        height: 25px;
+        width: 25px;
+    }
+    .cont_intereses{
+        height: 90px;
+    }
+    .cont_label2 label{
+        font-size: 25px;
+    }
+    .cont_label2 label input {
+        height: 20px;
+        width: 20px;
+    }
+    .cont_img input{
+        font-size: 23px;
+    }
+    .cont_btn{
+        gap: 10px;
+        margin: 10px 0px 0px 0px;
+    }
+    .cont_btn button {
+        padding: 8px 12px;
+        font-size: 26px;
+    }
+}
